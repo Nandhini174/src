@@ -35,6 +35,7 @@ var addressLat = '45.1340';
 var addressLong = '67.3436';
 var recfacility = 'East Machias';
 
+
 beforeAll(async () => {
   context = await createContext();
   page = await context.newPage();
@@ -146,6 +147,7 @@ describe('Abort and Cancel the call', () => {
     await cardDetailPage.closeCard();
   });
 });
+
 describe('Destroy Ops Data', () => {
   test('destroy Ops', async () => {
     await regionBoardPage.destroyOps(unitName);
